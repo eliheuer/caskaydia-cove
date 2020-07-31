@@ -58,16 +58,16 @@
       <kerning/>
       <info/>
     </instance>
-    <instance name="Caskaydia Cove SemiLight" familyname="Caskaydia Cove" stylename="SemiLight" filename="instance_ufos/CaskaydiaCove-SemiLight.ufo" stylemapfamilyname="Caskaydia Cove SemiLight" stylemapstylename="regular">
+    <instance name="Caskaydia Cove Regular" familyname="Caskaydia Cove" stylename="Regular" filename="instance_ufos/CaskaydiaCove-Regular.ufo" stylemapfamilyname="Caskaydia Cove" stylemapstylename="regular">
       <location>
-        <dimension name="Weight" xvalue="380"/>
+        <dimension name="Weight" xvalue="500"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance name="Caskaydia Cove Regular" familyname="Caskaydia Cove" stylename="Regular" filename="instance_ufos/CaskaydiaCove-Regular.ufo" stylemapfamilyname="Caskaydia Cove" stylemapstylename="regular">
+    <instance name="Caskaydia Cove Medium" familyname="Caskaydia Cove" stylename="Medium" filename="instance_ufos/CaskaydiaCove-Medium.ufo" stylemapfamilyname="Caskaydia Cove Medium" stylemapstylename="regular">
       <location>
-        <dimension name="Weight" xvalue="500"/>
+        <dimension name="Weight" xvalue="550"/>
       </location>
       <kerning/>
       <info/>
