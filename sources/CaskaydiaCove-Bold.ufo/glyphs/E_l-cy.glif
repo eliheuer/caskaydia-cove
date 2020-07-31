@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="El-cy" format="2">
+  <advance width="1200"/>
+  <unicode hex="041B"/>
+  <outline>
+    <contour>
+      <point x="20" y="1" type="line"/>
+      <point x="446" y="1"/>
+      <point x="482" y="206"/>
+      <point x="482" y="538" type="curve" smooth="yes"/>
+      <point x="482" y="1420" type="line"/>
+      <point x="221" y="1420" type="line"/>
+      <point x="221" y="531" type="line" smooth="yes"/>
+      <point x="221" y="354"/>
+      <point x="228" y="244"/>
+      <point x="20" y="244" type="curve"/>
+    </contour>
+    <contour>
+      <point x="813" y="0" type="line"/>
+      <point x="1077" y="0" type="line"/>
+      <point x="1077" y="1420" type="line"/>
+      <point x="813" y="1420" type="line"/>
+    </contour>
+    <contour>
+      <point x="325" y="1177" type="line"/>
+      <point x="1040" y="1177" type="line"/>
+      <point x="1040" y="1420" type="line"/>
+      <point x="325" y="1420" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="upperrighttolowerleftFillSquare" format="2">
+  <advance width="1200"/>
+  <unicode hex="25A8"/>
+  <note>
+uni25A8
+</note>
+  <outline>
+    <contour>
+      <point x="1084" y="1063" type="line"/>
+      <point x="957" y="1181" type="line"/>
+      <point x="126" y="351" type="line"/>
+      <point x="244" y="223" type="line"/>
+    </contour>
+    <contour>
+      <point x="1030" y="682" type="line"/>
+      <point x="1030" y="911" type="line"/>
+      <point x="398" y="279" type="line"/>
+      <point x="627" y="279" type="line"/>
+    </contour>
+    <contour>
+      <point x="805" y="1127" type="line"/>
+      <point x="576" y="1127" type="line"/>
+      <point x="150" y="718" type="line"/>
+      <point x="150" y="472" type="line"/>
+    </contour>
+    <component base="whiteSquare" xScale="-1" xOffset="1200"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.componentsAlignment</key>
+      <array>
+        <integer>-1</integer>
+      </array>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

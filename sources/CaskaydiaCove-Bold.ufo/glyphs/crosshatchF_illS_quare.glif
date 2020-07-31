@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="crosshatchFillSquare" format="2">
+  <advance width="1200"/>
+  <unicode hex="25A6"/>
+  <note>
+uni25A6
+</note>
+  <outline>
+    <contour>
+      <point x="149" y="756" type="line"/>
+      <point x="1051" y="756" type="line"/>
+      <point x="1051" y="914" type="line"/>
+      <point x="149" y="914" type="line"/>
+    </contour>
+    <contour>
+      <point x="396" y="259" type="line"/>
+      <point x="554" y="259" type="line"/>
+      <point x="554" y="1161" type="line"/>
+      <point x="396" y="1161" type="line"/>
+    </contour>
+    <contour>
+      <point x="149" y="506" type="line"/>
+      <point x="1051" y="506" type="line"/>
+      <point x="1051" y="664" type="line"/>
+      <point x="149" y="664" type="line"/>
+    </contour>
+    <contour>
+      <point x="646" y="259" type="line"/>
+      <point x="804" y="259" type="line"/>
+      <point x="804" y="1161" type="line"/>
+      <point x="646" y="1161" type="line"/>
+    </contour>
+    <component base="whiteSquare"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.componentsAlignment</key>
+      <array>
+        <integer>-1</integer>
+      </array>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

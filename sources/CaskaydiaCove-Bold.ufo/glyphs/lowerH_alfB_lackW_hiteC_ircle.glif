@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="lowerHalfBlackWhiteCircle" format="2">
+  <advance width="1200"/>
+  <unicode hex="25D2"/>
+  <note>
+uni25D2
+</note>
+  <outline>
+    <contour>
+      <point x="594" y="252" type="line"/>
+      <point x="1015" y="412" type="line"/>
+      <point x="1015" y="710" type="line"/>
+      <point x="181" y="710" type="line"/>
+      <point x="181" y="459" type="line"/>
+    </contour>
+    <component base="whiteCircle" xScale="-1" xOffset="1200"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.componentsAlignment</key>
+      <array>
+        <integer>-1</integer>
+      </array>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

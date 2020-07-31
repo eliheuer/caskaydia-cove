@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="less_slash_greater.liga" format="2">
+  <advance width="1200"/>
+  <outline>
+    <contour>
+      <point x="3" y="189" type="line"/>
+      <point x="977" y="575" type="line"/>
+      <point x="977" y="843" type="line"/>
+      <point x="-369" y="1389" type="line"/>
+      <point x="-369" y="1120" type="line"/>
+      <point x="660" y="726" type="line"/>
+      <point x="660" y="692" type="line"/>
+      <point x="3" y="459" type="line"/>
+    </contour>
+    <contour>
+      <point x="-847" y="39" type="line"/>
+      <point x="-842" y="306" type="line"/>
+      <point x="-1845" y="692" type="line"/>
+      <point x="-1845" y="726" type="line"/>
+      <point x="-1183" y="961" type="line"/>
+      <point x="-1183" y="1231" type="line"/>
+      <point x="-2160" y="843" type="line"/>
+      <point x="-2160" y="575" type="line"/>
+    </contour>
+    <component base="slash" xOffset="-1190"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.componentsAlignment</key>
+      <array>
+        <integer>-1</integer>
+      </array>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>
