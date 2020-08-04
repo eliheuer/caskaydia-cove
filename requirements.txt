@@ -1,0 +1,3 @@
+fontmake
+fonttools
+git+https://github.com/googlefonts/gftools
