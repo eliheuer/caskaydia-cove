@@ -1,14 +1,14 @@
 # Caskaydia Cove
-Cascaydia Cove is a fork of [Cascadia Code]() with a few adjustments to conform to the Google Fonts spec and the RFN removed.  The name comes from the Nerds Fonts project, which uses "Caskaydia Code" for its own patched version of Casdadia Code.
+Cascaydia Cove is a fork of [Cascadia Code](https://github.com/microsoft/cascadia-code) with a few adjustments to conform to the [Google Fonts spec](https://github.com/googlefonts/gf-docs/tree/master/Spec) and the [RFN](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web_fonts_and_RFNs) removed.  The name comes from the [Nerds Fonts](https://github.com/ryanoasis/nerd-fonts) project, which uses “Caskaydia Cove” for its own patched version of Casdadia Code.
 
 This fork is maintained by a Washingtonian working from the Pacific Northwest.
 
-The Cascadia Code upstream project is designed by Aaron Bell and developed by the Windows Terminal Team. Thanks for the great work making coman-line workflows more beautiful and accesible Aaron and Microsoft! If you want to know more about the Windows Terminal procest, I recomend listening to this podcast episode or checking out the official windows terminal blog.
+The Cascadia Code upstream project is designed by Aaron Bell and developed by the Windows Terminal team. Thanks for the great work making command-line workflows more beautiful and accesible Aaron and Microsoft! If you want to know more about the Windows Terminal procest, I recomend listening to this podcast episode or checking out the official windows terminal blog.
 
-Below is a demo of the variable font version of typeface, Python source code fore this animation is here: [documentation/animations/variable-font-specimen.py](documentation/animations/variable-font-specimen.py)
+Below is a demo of the variable font version of typeface, Python source code for this animation is here: [documentation/animations/variable-font-specimen.py](documentation/animations/variable-font-specimen.py)
 ![Variable Font Example](documentation/animations/variable-font-specimen.gif)
 
-And usage example with iTerm2 and bat.
+And usage example with [iTerm2](https://github.com/gnachman/iTerm2) and [bat](https://github.com/sharkdp/bat).
 ![Screenshot](documentation/screenshots/screenshot.png)
 
 Caskaydia Cove is licensed under the [SIL Open Font License Version 1.1](OFL.txt), please see the [OFL-FAQ.txt](OFL-FAQ.txt) file if you have any legal questions.
