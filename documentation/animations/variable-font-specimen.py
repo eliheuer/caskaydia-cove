@@ -4,7 +4,7 @@ import math
 
 # CONSTANTS
 W = 1024  # Width
-H = 512   # Height
+H = 256   # Height
 M = 32    # Margin
 U = 32    # Unit (Grid Unit)
 F = 64    # Frames (Animation)
@@ -25,10 +25,10 @@ def grid():
     step_Y = 0
     increment_X = U
     increment_Y = U
-    for x in range(32):
+    for x in range(31):
         polygon( (M+step_X, M), (M+step_X, H-M) )
         step_X += increment_X
-    for y in range(16):
+    for y in range(7):
         polygon( (M, M+step_Y), (W-M, M+step_Y) )
         step_Y += increment_Y
     fill(None)
@@ -39,11 +39,11 @@ def grid():
 # NEW PAGE
 def new_page():
     newPage(W, H)
-    frameDuration(1/300)
+    frameDuration(1/6)
     fill(0)
     rect(-2, -2, W+2, H+2)
 
-# SET FONT
+# TEST FONT
 font("../../fonts/variable/CaskaydiaCove[wght].ttf")
 for axis, data in listFontVariations().items():
     print((axis, data))
@@ -55,17 +55,15 @@ for frame in range(F-1):
     new_page()
     font("../../fonts/variable/CaskaydiaCove[wght].ttf")
     grid() # Toggle for grid view
-    fontSize((M*4))
+    fontSize((M*3))
     #print("Sine step:", sin(step))
 
     varWght = remap(sin(step),-1,1,200,700)
     fontVariations(wght=varWght)
-    text("Caskaydia", (M, M*12))
-    text("Cove", (M, M*9))
-
-    fontSize((M*2))
+    text("Caskaydia Cove", (M, M*4))
+    fill(0.3)
     weight = str(int(varWght))
-    weightText = 'Weight_Axis[wght]: ' + weight
+    weightText = '#Weight[wght]:' + weight
     fontVariations(wght=400)
     text(weightText, (M, M*1))
 
@@ -73,4 +71,5 @@ for frame in range(F-1):
     step += 0.1
 
 # SAVE THE ANIMATION IN THIS SCRIPT'S DIRECTORY LOCATION
+# POST-PROCESS: gifsicle -i variable-font-specimen.gif --optimize=16 -o output.gif
 saveImage("variable-font-specimen.gif")
