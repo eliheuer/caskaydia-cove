@@ -15,7 +15,7 @@ Caskaydia Cove is licensed under the [SIL Open Font License Version 1.1](OFL.txt
 
 [Pull requests](https://github.com/eliheuer/caskaydia-cove/pulls) and new [issues](https://github.com/eliheuer/caskaydia-cove/issues) are welcome.
 
-## Development
+## Development and Building New Fonts
 
 Build scripts and UFO source files are in the [sources](sources) directory.
 
