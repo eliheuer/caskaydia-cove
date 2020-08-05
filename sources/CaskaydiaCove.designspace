@@ -4,8 +4,8 @@
     <axis tag="wght" name="Weight" minimum="200" maximum="700" default="400">
       <map input="200" output="140"/>
       <map input="300" output="260"/>
-      <map input="350" output="380"/>
       <map input="400" output="500"/>
+      <map input="500" output="550"/>
       <map input="600" output="650"/>
       <map input="700" output="750"/>
     </axis>
