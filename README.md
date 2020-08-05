@@ -3,7 +3,8 @@ A fork of Cascadia Code with a few adjustments to conform to the Google Fonts Sp
 
 The Cascadia Code upstream project is designed by Aaron Bell and developed by the Windows Terminal Team, thanks Aaron and Microsoft!
 
-![Variable Font Example](documentation/drawbot/variable-font-example-001.gif)
+![Variable Font Example](documentation/drawbot/variable-font-example.gif)
+![Screenshot](documentation/screenshots/screenshot.png)
 
 Caskaydia Cove is licensed under the [SIL Open Font License Version 1.1](OFL.txt), please see the [OFL-FAQ.txt](OFL-FAQ.txt) file if you have any legal questions.
 
