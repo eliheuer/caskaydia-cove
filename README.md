@@ -14,6 +14,27 @@ Python ([DrawBot](https://www.drawbot.com)) source code for this text specimen i
 And a usage example with [iTerm2](https://github.com/gnachman/iTerm2) and [bat](https://github.com/sharkdp/bat).
 ![Screenshot](documentation/screenshots/screenshot.png)
 
+## Variable Axes
+
+The Caskaydia Cove variable font has a weight (wght) axis:
+
+| Axis       | Tag    | Range        | Default |
+| ---------- | ------ | ------------ | ------- |
+| Weight     | `wght` | 200 to 700   | 400     |
+
+## Static Fonts
+
+Caskaydia Cove has the following static weights:
+
+| Font                         | Weight       | Axis Location |
+| ---------------------------- | ------------ | ------------- |
+| CaskaydiaCove-ExtraLight.ttf | Extra Light  | 200           |
+| CaskaydiaCove-Light.ttf      | Light        | 300           |
+| CaskaydiaCove-Regular.ttf    | Regular      | 400           |
+| CaskaydiaCove-Medium.ttf     | Medium       | 500           |
+| CaskaydiaCove-SemiBold.ttf   | Semi Bold    | 600           |
+| CaskaydiaCove-Bold.ttf       | Bold         | 700           |
+
 ## Development and Building New Fonts
 
 [Pull requests](https://github.com/eliheuer/caskaydia-cove/pulls) and new [issues](https://github.com/eliheuer/caskaydia-cove/issues) are welcome.
