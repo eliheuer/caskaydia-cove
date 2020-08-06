@@ -5,8 +5,11 @@ This fork is maintained by a Washingtonian working from the Pacific Northwest an
 
 The Cascadia Code upstream project is designed by [Aaron Bell](https://www.sajatypeworks.com/) and developed by the [Windows Terminal](https://github.com/microsoft/terminal) team. If you want to know more about the Windows Terminal project, please see the [Windows Command Line developer blog](https://devblogs.microsoft.com/commandline/). Thanks for the great work making command-line workflows more beautiful and accesible, Aaron and Microsoft!
 
-Below is a demo of the variable font version of typeface, Python source code for this animation is here: [documentation/animations/variable-font-specimen.py](documentation/animations/variable-font-specimen.py)
+Below is a demo of the variable font version of typeface, Python ([DrawBot](https://www.drawbot.com)) source code for this animation is here: [documentation/animations/variable-font-specimen.py](documentation/animations/variable-font-specimen.py)
 ![Variable Font Example](documentation/animations/variable-font-specimen.gif)
+
+Python ([DrawBot](https://www.drawbot.com)) source code for this text specimen is here: [documentation/images/text-specimen.py](documentation/images/text-specimen.py)
+![Text Example](documentation/images/text-specimen.png)
 
 And a usage example with [iTerm2](https://github.com/gnachman/iTerm2) and [bat](https://github.com/sharkdp/bat).
 ![Screenshot](documentation/screenshots/screenshot.png)
