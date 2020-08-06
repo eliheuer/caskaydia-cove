@@ -61,7 +61,7 @@ fontVariations(wght=200)
 textBox(TEXT, (M*1.3, M*0, M*9, M*14))
 fontVariations(wght=400)
 textBox(TEXT, (M*11.3, M*0, M*9, M*14))
-fontVariations(wght=600)
+fontVariations(wght=700)
 textBox(TEXT, (M*21.3, M*0, M*9, M*14))
 
 fill(1,0,0)
