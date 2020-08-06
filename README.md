@@ -1,9 +1,9 @@
 # Caskaydia Cove
-Cascaydia Cove is a fork of [Cascadia Code](https://github.com/microsoft/cascadia-code) that conforms to the [Google Fonts spec](https://github.com/googlefonts/gf-docs/tree/master/Spec) and has the [RFN](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web_fonts_and_RFNs) removed. The name comes from the [Nerds Fonts](https://github.com/ryanoasis/nerd-fonts) project, which uses “Caskaydia Cove” for its own patched version of Casdadia Code.
+Caskaydia Cove is a fork of the [Cascadia Code](https://github.com/microsoft/cascadia-code) typeface with the [RFN (Reserved Font Name)](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web_fonts_and_RFNs) removed, plus small adjustments to conform to the [Google Fonts spec](https://github.com/googlefonts/gf-docs/tree/master/Spec). The name comes from the [Nerds Fonts](https://github.com/ryanoasis/nerd-fonts) project, which uses “Caskaydia Cove” for its patched version of Casdadia Code. The RFN prevents distributing modified versions of fonts under the names used by their upstream maintainers, so if you are looking for something like Cascadia Code that can be modified for inclusion is various font collections without a name change, this repository might be what you are looking for.
 
 This fork is maintained by a Washingtonian working from the Pacific Northwest and is licensed under the [SIL Open Font License Version 1.1](OFL.txt). Please see the [OFL-FAQ.txt](OFL-FAQ.txt) file if you have any legal questions.
 
-The Cascadia Code upstream project is designed by [Aaron Bell](https://www.sajatypeworks.com/) and developed by the [Windows Terminal](https://github.com/microsoft/terminal) team. If you want to know more about the Windows Terminal project, please see the [Windows Command Line developer blog](https://devblogs.microsoft.com/commandline/). Thanks for the great work making command-line workflows more beautiful and accesible Aaron and Microsoft!
+The Cascadia Code upstream project is designed by [Aaron Bell](https://www.sajatypeworks.com/) and developed by the [Windows Terminal](https://github.com/microsoft/terminal) team. If you want to know more about the Windows Terminal project, please see the [Windows Command Line developer blog](https://devblogs.microsoft.com/commandline/). Thanks for the great work making command-line workflows more beautiful and accesible, Aaron and Microsoft!
 
 Below is a demo of the variable font version of typeface, Python source code for this animation is here: [documentation/animations/variable-font-specimen.py](documentation/animations/variable-font-specimen.py)
 ![Variable Font Example](documentation/animations/variable-font-specimen.gif)
@@ -34,3 +34,7 @@ If you are making a pull request to Google Fonts, add the `-gf` flag and files w
 ```
 sh build.sh -gf
 ```
+
+## License
+
+The Caskaydia Cove project is licensed under the [SIL Open Font License v1.1](OFL.txt).  This is a [libre](https://en.wikipedia.org/wiki/Free_software) software license that permits you to use the font software under a set of conditions. Please refer to the full text of the license for details about the permissions, conditions, and disclaimers.
