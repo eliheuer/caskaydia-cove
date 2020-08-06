@@ -98,8 +98,7 @@ if [ "$1" = "-gf" ]; then
   cp OFL.txt ~/Google/fonts/ofl/caskaydiacove/OFL.txt
   cp fonts/variable/CaskaydiaCove\[wght\].ttf ~/Google/fonts/ofl/caskaydiacove/
   mkdir -p ~/Google/fonts/ofl/caskaydiacove/static
-  cp fonts/CaskaydiaCove\[wght\].ttf ~/Google/fonts/ofl/caskaydiacove/static/a.ttf
-  cp fonts/CaskaydiaCove\[wght\].ttf ~/Google/fonts/ofl/caskaydiacove/static/b.ttf
+  cp fonts/ttf/* ~/Google/fonts/ofl/caskaydiacove/static/
 fi
 
 # CLEAN UP BUILD FILES
