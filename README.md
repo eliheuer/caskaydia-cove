@@ -3,7 +3,7 @@ Caskaydia Cove is a fork of the [Cascadia Code](https://github.com/microsoft/cas
 
 This fork is maintained by a Washingtonian working from the Pacific Northwest and is licensed under the [SIL Open Font License Version 1.1](OFL.txt). Please see the [OFL-FAQ.txt](OFL-FAQ.txt) file if you have any legal questions.
 
-The Cascadia Code upstream project is designed by [Aaron Bell](https://www.sajatypeworks.com/) and developed by the [Windows Terminal](https://github.com/microsoft/terminal) team. If you want to know more about the Windows Terminal project, please see the [Windows Command Line developer blog](https://devblogs.microsoft.com/commandline/). Thanks for the great work making command-line workflows more beautiful and accesible, Aaron and Microsoft!
+The Cascadia Code upstream project is designed by [Aaron Bell](https://www.sajatypeworks.com/) and developed by the [Windows Terminal](https://github.com/microsoft/terminal) team. If you want to know more about the Windows Terminal project, please see the [Windows Command Line developer blog](https://devblogs.microsoft.com/commandline/), or listen to [this podcast interview](https://changelog.com/podcast/406) about the subject. Thanks for the great work making command-line workflows more beautiful and accesible, Aaron and Microsoft!
 
 Below is a demo of the variable font version of typeface, Python ([DrawBot](https://www.drawbot.com)) source code for this animation is here: [documentation/animations/variable-font-specimen.py](documentation/animations/variable-font-specimen.py)
 ![Variable Font Example](documentation/animations/variable-font-specimen.gif)
