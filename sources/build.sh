@@ -103,6 +103,6 @@ if [ "$1" = "-gf" ]; then
 fi
 
 # CLEAN UP BUILD FILES
-#rm -rf BUILD_VENV
+rm -rf sources/instance_ufos
 
 echo "\nDONE!😃"
