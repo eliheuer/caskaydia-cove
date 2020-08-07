@@ -4,7 +4,7 @@ set -e
 
 # BUILD SETTINGS
 GOOGLE_FONTS_DIR="~/Google/fonts"  # Where the Google Fonts repo is cloned: https://github.com/google/fonts
-BUILD_STATIC_FONTS=true            # Set to `true` if you want to build static fonts
+BUILD_STATIC_FONTS=false            # Set to `true` if you want to build static fonts
 
 # BUILD SETUP
 source venv/bin/activate
@@ -20,6 +20,12 @@ date
 
 if [ "$1" = "-gf" ]; then
     echo "\nPREPARING A PULL REQUEST TO GOOGLE FONTS AT: $GOOGLE_FONTS_DIR";
+fi
+
+if [ "$BUILD_STATIC_FONTS" = "true" ]; then
+    echo "\nBUILD STATIC FONTS = TRUE"
+else
+    echo "\nBUILD STATIC FONTS = FALSE"
 fi
 
 echo "\nBUILDING VARIABLE FONTS WITH FONTMAKE..."
@@ -91,7 +97,7 @@ axes {
 }'
 
 if [ "$1" = "-gf" ]; then
-  echo "\n[INFO] Preparing a pull request to Google Fonts at ~/Google/fonts/ofl";
+  echo "\nMOVING FILES FOR A NEW PR TO ~/Google/fonts/ofl/caskaydiacove";
   cp DESCRIPTION.en_us.html ~/Google/fonts/ofl/caskaydiacove/
   cp FONTLOG.txt ~/Google/fonts/ofl/caskaydiacove/
   echo "$METADATA" > ~/Google/fonts/ofl/caskaydiacove/METADATA.pb
