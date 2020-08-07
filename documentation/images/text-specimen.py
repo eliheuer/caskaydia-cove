@@ -47,9 +47,8 @@ for axis, data in listFontVariations().items():
     print((axis, data))
 
 #TEXT
-TEXT = '''Wouldn’t everyone benefit by approching the world with the same inquisitive intensity, skepticism toward bureaucracy, openness to creativity, unselfishness in sharing accomplishments, urge to make improvments, and desire to build as those who followed the Hacker Ethic? By accepting others on the same unprejudiced basis by which computers accepted anyone who entered code into a Flexowriter? If everyone could interact with computers with the same innocent, productive, creative impulse that hackers did, the Hacker Ethic might spread through society like a benevolent ripple, and computers would indeed change the world for the better.
+TEXT = '''Wouldn’t everyone benefit by approaching the world with the same inquisitive intensity, skepticism toward bureaucracy, openness to creativity, unselfishness in sharing accomplishments, urge to make improvements, and desire to build as those who followed the Hacker Ethic? By accepting others on the same unprejudiced basis by which computers accepted anyone who entered code into a Flexowriter? If everyone could interact with computers with the same innocent, productive, creative impulse that hackers did, the Hacker Ethic might spread through society like a benevolent ripple, and computers would indeed change the world for the better.
 '''
-
 # MAIN
 new_page()
 font("../../fonts/variable/CaskaydiaCove[wght].ttf")
