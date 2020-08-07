@@ -59,32 +59,11 @@ If you are making a pull request to Google Fonts, add the `-gf` flag and files w
 sh build.sh -gf
 ```
 
-## Fontbakery Report at Commit d0b8499
-
+## Fontbakery Report at Commit 2a09391
 Fontbakery version: 0.7.29
 
 <details>
-<summary><b>[2] Family checks</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> Does font file include unacceptable control character glyphs?</summary>
-
-* [com.google.fonts/check/family/control_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/control_chars)
-<pre>--- Rationale ---
-
-Use of some unacceptable control characters in the U+0000 - U+001F range can
-lead to rendering issues on some platforms.
-
-Acceptable control characters are defined as .null (U+0000) and CR (U+000D) for
-this test.
-
-
-</pre>
-
-* 🔥 **FAIL** The following unacceptable control characters were identified:
- CaskaydiaCove[wght].ttf: uni0009
- [code: unacceptable]
-
-</details>
+<summary><b>[1] Family checks</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Is the command `ftxvalidator` (Apple Font Tool Suite) available?</summary>
 
@@ -111,17 +90,9 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds
 <br>
 </details>
 <details>
-<summary><b>[14] CaskaydiaCove[wght].ttf</b></summary>
+<summary><b>[6] CaskaydiaCove[wght].ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries.</summary>
-
-* [com.google.fonts/check/name/unwanted_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars)
-
-* 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file.</summary>
+<summary>⚠ <b>WARN:</b> Check copyright namerecords match license file.</summary>
 
 * [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
 <pre>--- Rationale ---
@@ -150,179 +121,44 @@ When in doubt, please choose OFL for new font projects.
 
 </pre>
 
-* 🔥 **FAIL** License file OFL.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 3 (WINDOWS) is not specified for that. Value was: "Microsoft supplied font. You may use this font to create, display, and print content as permitted by the license terms or terms of use, of the Microsoft product, service, or content in which this font was included. You may only (i) embed this font in content as permitted by the embedding restrictions included in this font; and (ii) temporarily download this font to a printer or other output device to help print content. Any other use is prohibited.
- 
-The following license, based on the SIL Open Font license (https://scripts.sil.org/OFL), applies to this font. Additional license terms may be found on the GitHub repository for this font (https://github.com/microsoft/cascadia-code/blob/master/LICENSE).
- 
-Permission is hereby granted, free of charge, to any person obtaining a copy of the Font Software, to use, study, copy, merge, embed, modify, redistribute, and sell modified and unmodified copies of the Font Software, subject to the following conditions:
- 
-1) Neither the Font Software nor any of its individual components, in Original or Modified Versions, may be sold by itself.
- 
-2) Original or Modified Versions of the Font Software may be bundled, redistributed and/or sold with any software, provided that each copy contains the above copyright notice and this license. These can be included either as stand-alone text files, human-readable headers or in the appropriate machine-readable metadata fields within text or binary files as long as those fields can be easily viewed by the user.
- 
-3) No Modified Version of the Font Software may use the Reserved Font Name(s) unless explicit written permission is granted by the corresponding Copyright Holder. This restriction only applies to the primary font name as presented to the users.
- 
-4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font Software shall not be used to promote, endorse or advertise any Modified Version, except to acknowledge the contribution(s) of the Copyright Holder(s) and the Author(s) or with their explicit written permission.
- 
-5) The Font Software, modified or unmodified, in part or in whole, must be distributed entirely under this license, and must not be distributed under any other license. The requirement for fonts to remain under this license does not apply to any document created using the Font Software.
- 
-THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE." Must be changed to "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL" [code: wrong]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
 
 </details>
 <details>
-<summary>🔥 <b>FAIL:</b> Are there non-ASCII characters in ASCII-only NAME table entries?</summary>
+<summary>⚠ <b>WARN:</b> License URL matches License text on name table?</summary>
 
-* [com.google.fonts/check/name/ascii_only_entries](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/ascii_only_entries)
+* [com.google.fonts/check/name/license_url](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url)
 <pre>--- Rationale ---
 
-The OpenType spec requires ASCII for the POSTSCRIPT_NAME (nameID 6).
+A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry
+of the name table.
 
-For COPYRIGHT_NOTICE (nameID 0) ASCII is required because that string should be
-the same in CFF fonts which also have this requirement in the OpenType spec.
+The source of truth for this check is the licensing text found on the NameID 13
+entry (LICENSE DESCRIPTION).
 
-Note:
-A common place where we find non-ASCII strings is on name table entries with
-NameID &gt; 18, which are expressly for localising the ASCII-only IDs into Hindi /
-Arabic / etc.
+The string snippets used for detecting licensing terms are:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
 
 
 </pre>
 
-* 🔥 **FAIL** Bad string at [nameID 0, 'utf_16_be']: 'b'&#169; 2020 Microsoft Corporation. All Rights Reserved.'' [code: bad-string]
-* 🔥 **FAIL** There are 1 strings containing non-ASCII characters in the ASCII-only NAME table entries. [code: non-ascii-strings]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts</summary>
-
-* [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
-
-* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
-But instead we have got:
-"© 2020 Microsoft Corporation. All Rights Reserved." [code: bad-notice-format]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Copyright field for this font on METADATA.pb matches all copyright notice entries on the name table ?</summary>
-
-* [com.google.fonts/check/metadata/nameid/copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/nameid/copyright)
-
-* 🔥 **FAIL** Copyright field for this font on METADATA.pb ("Copyright 2020 The Caskaydia Cove Project Authors (https://github.com/eliheuer/caskaydia-cove)") differs from a copyright notice entry on the name table: "© 2020 Microsoft Corporation. All Rights Reserved." [code: mismatch]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Name table entries should not contain line-breaks.</summary>
-
-* [com.google.fonts/check/name/line_breaks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/line_breaks)
-<pre>--- Rationale ---
-
-There are some entries on the name table that may include more than one line of
-text. The Google Fonts team, though, prefers to keep the name table entries
-short and simple without line breaks.
-
-For instance, some designers like to include the full text of a font license in
-the &quot;copyright notice&quot; entry, but for the GFonts collection this entry should
-only mention year, author and other basic info in a manner enforced by
-com.google.fonts/check/font_copyright
-
-
-</pre>
-
-* 🔥 **FAIL** Name entry LICENSE_DESCRIPTION on platform WINDOWS contains a line-break. [code: line-break]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Name table strings must not contain the string 'Reserved Font Name'.</summary>
-
-* [com.google.fonts/check/name/rfn](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/rfn)
-<pre>--- Rationale ---
-
-Some designers adopt the &quot;Reserved Font Name&quot; clause of the OFL license. This
-means that the original author reserves the rights to the family name and other
-people can only distribute modified versions using a different family name.
-
-Google Fonts published updates to the fonts in the collection in order to fix
-issues and/or implement further improvements to the fonts. It is important to
-keep the family name so that users of the webfonts can benefit from the
-updates. Since it would forbid such usage scenario, all families in the GFonts
-collection are required to not adopt the RFN clause.
-
-This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name table.
-
-
-</pre>
-
-* 🔥 **FAIL** Name table entry ("Microsoft supplied font. You may use this font to create, display, and print content as permitted by the license terms or terms of use, of the Microsoft product, service, or content in which this font was included. You may only (i) embed this font in content as permitted by the embedding restrictions included in this font; and (ii) temporarily download this font to a printer or other output device to help print content. Any other use is prohibited.
- 
-The following license, based on the SIL Open Font license (https://scripts.sil.org/OFL), applies to this font. Additional license terms may be found on the GitHub repository for this font (https://github.com/microsoft/cascadia-code/blob/master/LICENSE).
- 
-Permission is hereby granted, free of charge, to any person obtaining a copy of the Font Software, to use, study, copy, merge, embed, modify, redistribute, and sell modified and unmodified copies of the Font Software, subject to the following conditions:
- 
-1) Neither the Font Software nor any of its individual components, in Original or Modified Versions, may be sold by itself.
- 
-2) Original or Modified Versions of the Font Software may be bundled, redistributed and/or sold with any software, provided that each copy contains the above copyright notice and this license. These can be included either as stand-alone text files, human-readable headers or in the appropriate machine-readable metadata fields within text or binary files as long as those fields can be easily viewed by the user.
- 
-3) No Modified Version of the Font Software may use the Reserved Font Name(s) unless explicit written permission is granted by the corresponding Copyright Holder. This restriction only applies to the primary font name as presented to the users.
- 
-4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font Software shall not be used to promote, endorse or advertise any Modified Version, except to acknowledge the contribution(s) of the Copyright Holder(s) and the Author(s) or with their explicit written permission.
- 
-5) The Font Software, modified or unmodified, in part or in whole, must be distributed entirely under this license, and must not be distributed under any other license. The requirement for fonts to remain under this license does not apply to any document created using the Font Software.
- 
-THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.") contains "Reserved Font Name". This is an error except in a few specific rare cases. [code: rfn]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 2280, but got 1977 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1220, but got 480 instead [code: descent]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
-
-* [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
-<pre>--- Rationale ---
-
-When OS/2 and hhea vertical metrics match, the same linespacing results on
-macOS, GNU+Linux and Windows. Unfortunately as of 2018, Google Fonts has
-released many fonts with vertical metrics that don&#x27;t match in this way. When we
-fix this issue in these existing families, we will create a visible change in
-line/paragraph layout for either Windows or macOS users, which will upset some
-of them.
-
-But we have a duty to fix broken stuff, and inconsistent paragraph layout is
-unacceptably broken when it is possible to avoid it.
-
-If users complain and prefer the old broken version, they have the freedom to
-take care of their own situation.
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2 sTypoAscender (1568) and hhea ascent (1977) must be equal. [code: ascender]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
 
 </details>
 <details>
@@ -406,15 +242,7 @@ https://typedrawers.com/discussion/comment/45140/#Comment_45140
 
 </pre>
 
-* ⚠ **WARN** Font is monospaced but 38 glyphs (2.3399014778325125%) have a different width. You should check the widths of: ['uni0308', 'uni0307', 'gravecomb', 'acutecomb', 'uni030B', 'uni0302', 'uni030C', 'uni0306', 'uni030A', 'tildecomb', 'uni0304', 'hookabovecomb', 'uni0312', 'uni031B', 'dotbelowcomb', 'uni0326', 'uni0327', 'uni0328', 'uni0340', 'uni0341', 'uni0308.case', 'uni0307.case', 'gravecomb.case', 'acutecomb.case', 'uni030B.case', 'uni0302.case', 'uni030C.case', 'uni0306.case', 'uni030A.case', 'tildecomb.case', 'uni0304.case', 'hookabovecomb.case', 'uni031B.case', 'acutecomb.loclPLK', 'acutecomb.case.loclPLK', 'uni0342', 'brevecombcy', 'brevecombcy.case'] [code: mono-outliers]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps.</summary>
-
-* [com.google.fonts/check/linegaps](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/hhea.html#com.google.fonts/check/linegaps)
-
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** Font is monospaced but 38 glyphs (2.3413431916204557%) have a different width. You should check the widths of: ['uni0308', 'uni0307', 'gravecomb', 'acutecomb', 'uni030B', 'uni0302', 'uni030C', 'uni0306', 'uni030A', 'tildecomb', 'uni0304', 'hookabovecomb', 'uni0312', 'uni031B', 'dotbelowcomb', 'uni0326', 'uni0327', 'uni0328', 'uni0340', 'uni0341', 'uni0308.case', 'uni0307.case', 'gravecomb.case', 'acutecomb.case', 'uni030B.case', 'uni0302.case', 'uni030C.case', 'uni0306.case', 'uni030A.case', 'tildecomb.case', 'uni0304.case', 'hookabovecomb.case', 'uni031B.case', 'acutecomb.loclPLK', 'acutecomb.case.loclPLK', 'uni0342', 'brevecombcy', 'brevecombcy.case'] [code: mono-outliers]
 
 </details>
 <details>
@@ -432,8 +260,8 @@ https://typedrawers.com/discussion/comment/45140/#Comment_45140
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 10 | 6 | 39 | 9 | 113 | 0 |
-| 0% | 6% | 3% | 22% | 5% | 64% | 0% |
+| 0 | 0 | 7 | 38 | 9 | 123 | 0 |
+| 0% | 0% | 4% | 21% | 5% | 69% | 0% |
 
 ## License
 
