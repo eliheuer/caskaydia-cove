@@ -4,7 +4,7 @@ set -e
 
 # BUILD SETTINGS
 GOOGLE_FONTS_DIR="~/Google/fonts"  # Where the Google Fonts repo is cloned: https://github.com/google/fonts
-BUILD_STATIC_FONTS=false            # Set to `true` if you want to build static fonts
+BUILD_STATIC_FONTS=true            # Set to `true` if you want to build static fonts
 
 # BUILD SETUP
 source venv/bin/activate

@@ -60,14 +60,6 @@
       <integer>0</integer>
       <integer>4</integer>
     </array>
-    <key>openTypeOS2Selection</key>
-    <array>
-      <integer>7</integer>
-    </array>
-    <key>openTypeOS2Type</key>
-    <array/>
-    <key>openTypeOS2VendorID</key>
-    <string>SAJA</string>
     <key>postscriptBlueValues</key>
     <array>
       <integer>-20</integer>
@@ -120,5 +112,9 @@
     <integer>300</integer>
     <key>xHeight</key>
     <integer>1060</integer>
+    <key>openTypeOS2Type</key>
+    <array>
+        <integer>0</integer>
+    </array>
   </dict>
 </plist>
