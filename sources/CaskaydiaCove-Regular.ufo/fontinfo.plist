@@ -37,6 +37,10 @@
     <string>Eli Heuer</string>
     <key>openTypeNameManufacturerURL</key>
     <string>https://elih.blog</string>
+    <key>openTypeOS2Type</key>
+    <array>
+      <integer>0</integer>
+    </array>
     <key>openTypeOS2TypoAscender</key>
     <integer>1977</integer>
     <key>openTypeOS2TypoDescender</key>
@@ -112,9 +116,5 @@
     <integer>300</integer>
     <key>xHeight</key>
     <integer>1060</integer>
-    <key>openTypeOS2Type</key>
-    <array>
-        <integer>0</integer>
-    </array>
   </dict>
 </plist>
