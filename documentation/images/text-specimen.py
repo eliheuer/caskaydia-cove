@@ -53,15 +53,15 @@ TEXT = '''Wouldn’t everyone benefit by approaching the world with the same inq
 new_page()
 font("../../fonts/variable/CaskaydiaCove[wght].ttf")
 #grid() # Toggle for grid view
-fontSize(M/2.09)
+fontSize(M/2.12)
 fill(0.9)
 
 fontVariations(wght=200)
-textBox(TEXT, (M*1.3, M*0, M*9, M*14))
+textBox(TEXT, (M*1.3, M*0, M*9.2, M*14))
 fontVariations(wght=400)
-textBox(TEXT, (M*11.3, M*0, M*9, M*14))
+textBox(TEXT, (M*11.3, M*0, M*9.2, M*14))
 fontVariations(wght=700)
-textBox(TEXT, (M*21.3, M*0, M*9, M*14))
+textBox(TEXT, (M*21.3, M*0, M*9.2, M*14))
 
 fill(1,0,0)
 fontVariations(wght=400)
