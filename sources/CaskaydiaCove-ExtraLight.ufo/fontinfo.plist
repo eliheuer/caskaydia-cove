@@ -38,15 +38,15 @@
     <key>openTypeNameManufacturerURL</key>
     <string>https://elih.blog</string>
     <key>openTypeOS2TypoAscender</key>
-    <integer>1568</integer>
+    <integer>1977</integer>
     <key>openTypeOS2TypoDescender</key>
     <integer>-480</integer>
     <key>openTypeOS2TypoLineGap</key>
     <integer>0</integer>
     <key>openTypeOS2WinAscent</key>
-    <integer>1568</integer>
+    <integer>2280</integer>
     <key>openTypeOS2WinDescent</key>
-    <integer>271</integer>
+    <integer>1220</integer>
     <key>openTypeOS2Panose</key>
     <array>
       <integer>2</integer>
