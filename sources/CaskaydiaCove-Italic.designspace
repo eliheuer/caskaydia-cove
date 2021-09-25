@@ -114,7 +114,7 @@
         </dict>
       </lib>
     </instance>
-    <instance name="Caskaydia Cove SemiLight Italic" familyname="Caskaydia Cove" stylename="SemiLight Italic" filename="instance_ufos/CascadiaCode-SemiLightItalic.ufo" stylemapfamilyname="Caskaydia Cove SemiLight" stylemapstylename="italic">
+    <instance name="Caskaydia Cove Italic" familyname="Caskaydia Cove" stylename="Italic" filename="instance_ufos/CascadiaCode-Italic.ufo" stylemapfamilyname="Caskaydia Cove" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="380"/>
         <dimension name="Italic" xvalue="1"/>
@@ -141,7 +141,7 @@
         </dict>
       </lib>
     </instance>
-    <instance name="Caskaydia Cove Italic" familyname="Caskaydia Cove" stylename="Italic" filename="instance_ufos/CascadiaCode-Italic.ufo" stylemapfamilyname="Caskaydia Cove" stylemapstylename="italic">
+    <instance name="Caskaydia Cove Italic" familyname="Caskaydia Cove" stylename="Medium Italic" filename="instance_ufos/CascadiaCode-MediumItalic.ufo" stylemapfamilyname="Caskaydia Cove Medium" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="500"/>
         <dimension name="Italic" xvalue="1"/>
