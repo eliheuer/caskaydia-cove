@@ -31,15 +31,21 @@ fi
 echo "\nBUILDING VARIABLE FONTS WITH FONTMAKE..."
 fontmake --mm-designspace sources/CaskaydiaCove.designspace -o variable \
   --output-path fonts/variable/CaskaydiaCove\[wght\].ttf
+fontmake --mm-designspace sources/CaskaydiaCove-Italic.designspace -o variable \
+  --output-path fonts/variable/CaskaydiaCove-Italic\[wght\].ttf
 #  --verbose ERROR
 
 if [ "$BUILD_STATIC_FONTS" = "true" ]; then
     echo "\nBUILDING STATIC TTF FONTS WITH FONTMAKE..."
     fontmake --mm-designspace sources/CaskaydiaCove.designspace -i -o ttf \
         --output-dir fonts/ttf/ \
+    fontmake --mm-designspace sources/CaskaydiaCove-Italic.designspace -i -o ttf \
+        --output-dir fonts/ttf/ \
         --verbose ERROR
     echo "\nBUILDING STATIC OTF FONTS WITH FONTMAKE..."
     fontmake --mm-designspace sources/CaskaydiaCove.designspace -i -o otf \
+        --output-dir fonts/otf/ \
+    fontmake --mm-designspace sources/CaskaydiaCove-Italic.designspace -i -o otf \
         --output-dir fonts/otf/ \
         --verbose ERROR
 fi
@@ -86,6 +92,13 @@ fonts {
   filename: "CaskaydiaCove[wght].ttf"
   post_script_name: "CaskaydiaCove-Regular"
   full_name: "Caskaydia Cove Regular"
+  copyright: "Copyright 2020 The Caskaydia Cove Project Authors (https://github.com/eliheuer/caskaydia-cove)"
+  name: "Caskaydia Cove"
+  style: "italic"
+  weight: 400
+  filename: "CaskaydiaCove-Italic[wght].ttf"
+  post_script_name: "CaskaydiaCove-Italic"
+  full_name: "Caskaydia Cove Italic"
   copyright: "Copyright 2020 The Caskaydia Cove Project Authors (https://github.com/eliheuer/caskaydia-cove)"
 }
 subsets: "latin"
